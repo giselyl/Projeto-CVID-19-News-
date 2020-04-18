@@ -9,82 +9,86 @@
 </head>
 
 <body>
-  <table id="header">
-    <td>
-      <div id="logo">
-        <a href="home.html">
-          <img id="logo1" src="./assets/img/Covid-19 News.png" alt="Logo">
-        </a>
+  <div id="page-container">
+    <div id="content-wrap">
+      <table id="header">
+        <td>
+          <div id="logo">
+            <a href="home.html">
+              <img id="logo1" src="./assets/img/Covid-19 News.png" alt="Logo">
+            </a>
+          </div>
+        </td>
+        <td>
+          <div id="home">
+            <a href="home.html" title="home" target="_self">
+              <h2>Home</h2>
+            </a>
+          </div>
+        </td>
+        <td>
+          <div id="sobre">
+            <a href="sobre.html" title="sobre" target="_self">
+              <h2>Sobre</h2>
+            </a>
+          </div>
+        </td>
+        <td>
+          <div id="contato">
+            <a href="contato.html" title="contato" target="_self">
+              <h2>Contato</h2>
+            </a>
+          </div>
+        </td>
+        <td>
+          <div id="saibaMais">
+            <a href="saibamais.html" title="saibamais" target="_self">
+              <h2>Saiba Mais</h2>
+            </a>
+          </div>
+        </td>
+      </table>
+      <div div="title">
+        <h1>Contato</h1>
       </div>
-    </td>
-    <td>
-      <div id="home">
-        <a href="home.html" title="home" target="_self">
-          <h2>Home</h2>
-        </a>
+      <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Nome : <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Mensagem: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+    </div>
+    <footer>
+      <div>
+        <p> Copyright © 2020 | Gisely Lacerda</p>
       </div>
-    </td>
-    <td>
-      <div id="sobre">
-        <a href="sobre.html" title="sobre" target="_self">
-          <h2>Sobre</h2>
-        </a>
+      <div class="logos">
+        <div class="companyLogo">
+          <a href="https://hiringcoders.gama.academy/" title="hiringCoders" target="_blank">
+            <img src="assets/img/logo-hiring-coders.svg" />
+          </a>
+        </div>
+        <div class="companyLogo">
+          <a href="https://www.vtex.com" title="Vtex" target="_blank">
+            <img src="assets/img/logo-vtex.svg" />
+          </a>
+        </div>
+        <div class="companyLogo">
+          <a href="https://gama.academy/" title="GamaAcademy" target="_blank">
+            <img src="assets/img/logo-gama.png" />
+          </a>
+        </div>
       </div>
-    </td>
-    <td>
-      <div id="contato">
-        <a href="contato.html" title="contato" target="_self">
-          <h2>Contato</h2>
-        </a>
-      </div>
-    </td>
-    <td>
-      <div id="saibaMais">
-        <a href="saibamais.html" title="saibamais" target="_self">
-          <h2>Saiba Mais</h2>
-        </a>
-      </div>
-    </td>
-  </table>
-  <div div="title">
-    <h1>Contato</h1>
+    </footer>
   </div>
-  <form name="contact" method="POST" data-netlify="true">
-    <p>
-      <label>Nome : <input type="text" name="name" /></label>
-    </p>
-    <p>
-      <label>Email: <input type="email" name="email" /></label>
-    </p>
-    <p>
-      <label>Mensagem: <textarea name="message"></textarea></label>
-    </p>
-    <p>
-      <button type="submit">Send</button>
-    </p>
-  </form>
 </body>
-<footer>
-  <div>
-    <p> Copyright © 2020 | Gisely Lacerda</p>
-  </div>
-  <div class="logos">
-    <div class="companyLogo">
-      <a href="https://hiringcoders.gama.academy/" title="hiringCoders" target="_blank">
-        <img src="assets/img/logo-hiring-coders.svg" />
-      </a>
-    </div>
-    <div class="companyLogo">
-      <a href="https://www.vtex.com" title="Vtex" target="_blank">
-        <img src="assets/img/logo-vtex.svg" />
-      </a>
-    </div>
-    <div class="companyLogo">
-      <a href="https://gama.academy/" title="GamaAcademy" target="_blank">
-        <img src="assets/img/logo-gama.png" />
-      </a>
-    </div>
-  </div>
-</footer>
 
 </html>
