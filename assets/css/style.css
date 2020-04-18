@@ -1,0 +1,11 @@
+#logo {
+    max-width: 100%;
+    display: block;
+    height: auto;
+    width: 15vw;
+}
+
+#browsingmenu {
+    display: grid;
+    align-items: flex-end;
+}
