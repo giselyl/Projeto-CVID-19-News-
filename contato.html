@@ -1,45 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+<link href="./assets/css/style.css" rel="stylesheet">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewpor" content="width-device-width, initial-scale=1.0">
-  <!-- <link rel="shortcut icon" href="assets/img/icone.png" /> -->
-  <title>Good News COVID-19</title>
+  <title>COVID-19 TI News</title>
 </head>
 
 <body>
-  <div id=" header">
-    <div id="logo">
-      <img src="assets/img/Covid-19 News.png" alt="logo">
-    </div>
-    <h1>COVID-19 News</h1>
-    <div id="browsing menu">
+  <table id="header">
+    <td>
+      <div id="logo">
+        <a href="home.html">
+          <img id="logo1" src="./assets/img/Covid-19 News.png" alt="Logo">
+        </a>
+      </div>
+    </td>
+    <td>
       <div id="home">
         <a href="home.html" title="home" target="_self">
           <h2>Home</h2>
         </a>
       </div>
+    </td>
+    <td>
       <div id="sobre">
         <a href="sobre.html" title="sobre" target="_self">
           <h2>Sobre</h2>
         </a>
       </div>
+    </td>
+    <td>
       <div id="contato">
         <a href="contato.html" title="contato" target="_self">
           <h2>Contato</h2>
         </a>
       </div>
+    </td>
+    <td>
       <div id="saibaMais">
         <a href="saibamais.html" title="saibamais" target="_self">
           <h2>Saiba Mais</h2>
         </a>
       </div>
-    </div>
-  </div>
-  <id class="title">
+    </td>
+  </table>
+  <div div="title">
     <h1>Contato</h1>
-  </id>
+  </div>
   <form name="contact" method="POST" data-netlify="true">
     <p>
       <label>Nome : <input type="text" name="name" /></label>
@@ -56,24 +65,26 @@
   </form>
 </body>
 <footer>
-  <div id="logos">
-    <div id="HiringCoders">
+  <div>
+    <p> Copyright © 2020 | Gisely Lacerda</p>
+  </div>
+  <div class="logos">
+    <div class="companyLogo">
       <a href="https://hiringcoders.gama.academy/" title="hiringCoders" target="_blank">
-        <img src="assets/img/logo-hiring-coders.svg">
+        <img src="assets/img/logo-hiring-coders.svg" />
       </a>
     </div>
-    <div id=" Vtex">
+    <div class="companyLogo">
       <a href="https://www.vtex.com" title="Vtex" target="_blank">
-        <img src="assets/img/logo-vtex.svg">
+        <img src="assets/img/logo-vtex.svg" />
       </a>
     </div>
-    <div id="GamaAcademy">
-      <a href="https://www.vtex.com" title="Vtex" target="_blank">
-        <img src="assets/img/logo-gama.png">
+    <div class="companyLogo">
+      <a href="https://gama.academy/" title="GamaAcademy" target="_blank">
+        <img src="assets/img/logo-gama.png" />
       </a>
     </div>
   </div>
-
 </footer>
 
 </html>
