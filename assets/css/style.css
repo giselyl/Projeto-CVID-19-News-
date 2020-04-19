@@ -1,18 +1,60 @@
-#header {
+.header {
   width: 100%;
   font-family: sans-serif;
   color: black;
+  overflow: hidden;
+}
+.header h2 {
+  width: max-content;
 }
 
-#logo {
-  height: 20%;
-  width: 20%;
+h2 {
+  margin: 0;
+  padding: unset;
+}
+
+.tablink a {
+  position: relative;
+  float: left;
+  text-align: center;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 0.3s;
+}
+
+.tablink a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.tablink a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.tablink a.active:before {
+  background-color: #5ce1e6;
+}
+
+.tablink a.active {
+  color: #5ce1e6;
 }
 
 #logo1 {
-  max-width: 100%;
-  max-height: 100%;
+  height: 180px;
 }
+
 #social-network {
   text-align: center;
 }
@@ -37,12 +79,7 @@ a {
 
 .new a:hover {
   text-decoration: underline;
-  color: #5ce1e6;
-}
-
-a:active {
-  color: #5ce1e6;
-  text-decoration: underline;
+  color: black;
 }
 
 #page-container {
@@ -56,20 +93,11 @@ a:active {
   padding-bottom: 100px;
 }
 
-#title {
-  justify-content: center;
-  font-family: sans-serif;
-}
-
 #texto {
   padding-left: 20%;
   padding-right: 20%;
   text-align: justify;
 }
-
-/* #companyLogo {
-    size: 50%;
-} */
 
 h1 {
   text-align: center;
@@ -89,7 +117,7 @@ footer {
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
   display: grid;
 }
 
@@ -113,6 +141,7 @@ footer img {
   grid-gap: 1rem;
   margin-bottom: 1rem;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  margin-top: 1rem;
 }
 
 .new {
@@ -126,7 +155,10 @@ footer img {
   width: auto;
   height: auto;
   max-width: 100%;
-  max-height: 100%;
+  max-height: 90%;
+}
+.new-image {
+  min-width: 100%;
 }
 #table-form {
   width: 100%;
