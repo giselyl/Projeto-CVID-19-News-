@@ -82,6 +82,11 @@ a {
   color: black;
 }
 
+#my-image {
+  text-align: center;
+  height: 200px;
+}
+
 #page-container {
   position: relative;
   min-height: 100vh;
@@ -177,4 +182,7 @@ footer img {
 iframe {
   min-width: 100%;
   min-height: 320px;
+}
+#convite {
+  text-align: center;
 }
