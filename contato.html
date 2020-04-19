@@ -51,20 +51,44 @@
       <div div="title">
         <h1>Contato</h1>
       </div>
-      <form name="contact" method="POST" data-netlify="true">
-        <p>
-          <label>Nome : <input type="text" name="name" /></label>
-        </p>
-        <p>
-          <label>Email: <input type="email" name="email" /></label>
-        </p>
-        <p>
-          <label>Mensagem: <textarea name="message"></textarea></label>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
+      <div>
+        <form name="contact" method="POST" data-netlify="true">
+          <table id="table-form">
+            <tr>
+              <td class="input-description">
+                <label>Nome : </label>
+              </td>
+              <td class="input-field">
+                <input type="text" name="name" size="40" placeholder="Digite seu nome" />
+              </td>
+            </tr>
+            <tr>
+              <td class="input-description">
+                <label>Email : </label>
+              </td>
+              <td class="input-field">
+                <input type="email" name="email" size="40" placeholder="Digite seu email" />
+              </td>
+            </tr>
+            <tr>
+              <td class="input-description" style="vertical-align: text-top;">
+                <label>Mensagem : </label>
+              </td>
+              <td class="input-field">
+                <textarea name="message" rows="10" cols="50" placeholder="Digite sua mensagem"></textarea>
+              </td>
+            </tr>
+            <tr>
+              <td>&nbsp;</td>
+              <td>
+                <p>
+                  <button type="submit">Enviar</button>
+                </p>
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
     </div>
     <footer>
       <div>
